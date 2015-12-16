@@ -1,0 +1,12 @@
+<p>临时关闭（不用重启）</p>
+<pre>
+# setenforce 0
+</pre>
+
+<p>修改配置文件</p>
+<pre>
+# vim /etc/selinux/config
+SELINUX=disabled
+
+# reboot
+</pre>
