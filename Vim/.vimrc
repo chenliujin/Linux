@@ -8,3 +8,5 @@ set sw=4	"shiftwidth,使用每层缩进的空格数
 filetype indent on 	"Enable filetype indent
 "set smartindent "基于autoindent的一些改进
 "set cindent
+
+set fdm=marker
