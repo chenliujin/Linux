@@ -1,0 +1,54 @@
+<h2>生成密钥</h2>
+<p>看到很多教程有提到用puttygen.exe文件可以生成密钥的，但是可能会出现Server refused our key这样的登陆错误，所以我们这里直接使用VPS远程设置密钥，然后下载到本地。</p>
+
+[bash]
+$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): #回车
+Enter passphrase (empty for no passphrase): #回车
+Enter same passphrase again: #回车
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+85:1f:6e:55:54:94:f7:bf:0d:30:b5:aa:97:d5:bc:6d root@VM_194_119_centos
+The key's randomart image is:
++--[ RSA 2048]----+
+|             .oo+|
+|         .   ....|
+|        . o .. .o|
+|         + oo . .|
+|        S +  + o.|
+|         .  . o +|
+|           . o .=|
+|          . o  oE|
+|           .   . |
++-----------------+
+
+$ cd ~/.ssh/
+$ cat id_rsa.pub >> authorized_keys
+[/bash]
+
+<h2>修改 sshd 配置文件</h2>
+
+[bash]
+$ vim /etc/ssh/sshd_config
+StrictModes no => 去掉前面的 # 号，yes 改为 no
+RSAAuthentication yes => 去掉前面的 # 号
+PubkeyAuthentication yes => 去掉前面的 # 号
+
+# 重启 ssh 服务
+$ service sshd restart
+[/bash]
+
+<h2>客户端配置密钥</h2>
+<ul>
+    <li>打开 puttygen.exe</li>
+    <li>Load，选择服务器生成的 id_rsa 文件</li>
+    <li>Save private key => ip.ppk</li>
+</ul>
+
+<h2>设置 PUTTY 认证链接</h2>
+<ul>
+    <li>Connection -> Data -> Auto-login username，输入服务器的用户名，此次为 root</li>
+    <li>Connection -> SSH -> Auth -> Private key file for authentication，选择 ip.ppk</li>
+</ul>
