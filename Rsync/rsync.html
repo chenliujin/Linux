@@ -1,0 +1,10 @@
+<h2>PHP ÷– π”√ rsync</h2>
+<p>Because ssh always validate host key and then create known_hosts file under ~/.ssh directory.
+You can manually create the .ssh directory and chown to www-data.
+If not just tell ssh to skip host key checking.</p>
+
+<pre>
+rsync -e "ssh -o StrictHostKeyChecking=no,UserKnownHostsFile=/dev/null" --other-options-here	
+</pre>
+
+<p>https://www.digitalocean.com/community/questions/rsync-how-to-use-in-a-php-file</p>
