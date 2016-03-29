@@ -24,3 +24,12 @@ $ iptables -I INPUT -s 8.8.8.8 -p TCP --dport 80 -j DROP
 ```
 $ iptables -I INPUT -s 8.8.8.8 -p TCP --dport 80 -j ACCEPT
 ```
+
+## 删除之前添加的规则，用 -D 参数
+```
+# 之前添加的规则
+$ iptables -I INPUT -s 8.8.8.8 -p TCP --dport 80 -j DROP
+
+# 现在将其删除
+$ iptables -D INPUT -s 8.8.8.8 -p TCP --dport 80 -j DROP
+```
