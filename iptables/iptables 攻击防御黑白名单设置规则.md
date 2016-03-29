@@ -25,6 +25,21 @@ $ iptables -I INPUT -s 8.8.8.8 -p TCP --dport 80 -j DROP
 $ iptables -I INPUT -s 8.8.8.8 -p TCP --dport 80 -j ACCEPT
 ```
 
+## iptables 封/屏蔽 IP 段
+```
+封IP段的命令是
+iptables -I INPUT -s 124.115.0.0/16 -j DROP
+iptables -I INPUT -s 124.115.3.0/16 -j DROP
+iptables -I INPUT -s 124.115.4.0/16 -j DROP
+
+封整个段的命令是
+iptables -I INPUT -s 124.115.0.0/8 -j DROP
+
+封几个段的命令是
+iptables -I INPUT -s 61.37.80.0/24 -j DROP
+iptables -I INPUT -s 61.37.81.0/24 -j DROP
+```
+
 ## 删除之前添加的规则，用 -D 参数
 ```
 # 之前添加的规则
