@@ -3,3 +3,47 @@
 115.236.140.12
 113.142.24.15
 123.151.43.65
+123.57.239.25
+123.57.237.215
+211.155.86.232
+213.111.197.198
+42.156.139.57
+193.248.178.237
+111.161.48.138
+101.200.199.203
+101.200.205.6
+182.92.7.12
+130.185.155.82
+
+
+
+# china ip ≈¿≥Ê
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.121.82.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 101.200.204.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 111.206.36.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.135.165.8
+
+# robot 
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 100.42.229.240
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 104.251.224.128
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 216.87.168.52
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.199.110.251
+
+# http 400
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.52.119.97
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.74.98.247
+
+
+# …®√Ë¬©∂¥Ω≈±æ
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 162.213.152.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 78.29.40.129
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 101.226.103.146
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.200.12.79
+
+
+
+
+
+iptables -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.121.82.0/24
+
+iptables -I INPUT -p TCP --dport 80 -j DROP -s 42.121.82.141
