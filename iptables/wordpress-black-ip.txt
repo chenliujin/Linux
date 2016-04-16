@@ -1,29 +1,55 @@
-37.187.252.112
-195.208.64.37
-115.236.140.12
-113.142.24.15
-123.151.43.65
-123.57.239.25
-123.57.237.215
-211.155.86.232
+# china
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 101.200.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 103.37.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 111.161.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 111.206.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 113.142.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.236.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.151.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 182.92.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 211.155.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 220.181.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.135.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.174.0.0/16
+
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.120.0.0/16 	# Aliyun
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.121.0.0/16 	# Aliyun
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.156.128.0/17 	# Aliyun
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 110.76.32.0/20 	# Aliyun
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 121.42.0.0/16 	# Aliyun Çàµº
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 140.205.0.0/16 	# Aliyun
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.57.0.0/16 	# Aliyun
+
+# ÃÀ¹ú
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 142.54.0.0/16
+
+
+# Ó¢¹ú
 213.111.197.198
-42.156.139.57
+
+# ·¨¹ú
+37.187.252.112
 193.248.178.237
-111.161.48.138
-101.200.199.203
-101.200.205.6
-182.92.7.12
+
+# Èðµä
 130.185.155.82
 
-# china ip ÅÀ³æ
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.121.82.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.135.165.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.135.169.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 101.200.204.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 111.206.36.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 220.181.51.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.174.9.75
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.174.14.216
+
+# ¶íÂÞË¹
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.166.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 128.74.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.103.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 195.208.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.19.0.0/16
+
+
+# ÎÚ¿ËÀ¼
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.159.0.0/16
+
+# Ó¡¶È
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.249.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.252.0.0/16
+
 
 # robot 
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 100.42.229.240
@@ -39,49 +65,69 @@
 
 
 # É¨ÃèÂ©¶´½Å±¾
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 162.213.152.0/24
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 78.29.40.129
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 101.226.103.146
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.200.12.79
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 80.14.151.35
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 104.236.43.162
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.249.183.73
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 121.42.0.61
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 122.10.119.206
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.252.134.170
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 128.74.3.121
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 128.74.0.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 128.75.174.69
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 142.54.167.98
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 159.203.105.1
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 162.213.152.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 176.49.169.228
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 176.51.103.36
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.159.229.68
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.19.251.20
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.103.252.98
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.25.151.159
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.3.0.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 188.235.73.104
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 188.254.126.160
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 199.15.117.12
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 213.149.20.58
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 217.23.187.202
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 23.227.199.55
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 27.73.213.70
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 31.173.242.162
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 31.185.5.144
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 31.192.28.247
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 38.100.21.64
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 46.165.43.87
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 46.166.100.34
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 46.191.82.3
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 46.39.49.197
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.166.0.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 62.133.162.98
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 62.183.86.13
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 77.43.191.193
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 78.29.40.129
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 79.142.201.41
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 80.14.151.35
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 80.83.237.44
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 81.88.222.82
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 83.142.8.42
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 85.174.248.244
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 85.91.103.98
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 88.206.123.201
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 89.189.113.235
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.200.0.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.210.145.85
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 92.39.69.142
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 93.157.175.23
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 93.159.216.139
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 93.178.81.10
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 93.189.202.208
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 93.81.44.157
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.180.73.235
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.19.145.11
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.25.74.99
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.41.7.154
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.181.199.129
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 23.227.199.55
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 104.236.43.162
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.200.12.53
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.210.145.85
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 142.54.167.98
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.103.252.98
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.3.34.157
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 188.254.126.160
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 213.149.20.58
 
 
 
 
-iptables -I INPUT -p TCP --dport 80 -j DROP -s 42.121.82.141
+
+iptables -D INPUT -p TCP --dport 80 -j DROP -s 182.92.7.12
