@@ -32,19 +32,57 @@
 193.248.178.237
 
 # 瑞典
-130.185.155.82
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.153.233.130
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 130.185.155.0/24
+
+130.185.155.74
+
+
+# 意大利 
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.138.181.68
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 164.132.161.60
+
+
+#捷克
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 176.111.79.202
 
 
 # 俄罗斯
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.141.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.166.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.137.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.113.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 109.207.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 128.74.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.46.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.206.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.103.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.106.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 188.114.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 188.162.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 195.208.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 212.107.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 217.66.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 77.66.135.39
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 85.26.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 83.149.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 89.232.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.227.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.19.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.31.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.183.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 193.169.0.0/16
+
+
+# 哈萨克斯坦
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.99.0.0/16
 
 
 # 乌克兰
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.159.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.95.0.0/16
+
+
 
 # 印度
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.249.0.0/16
