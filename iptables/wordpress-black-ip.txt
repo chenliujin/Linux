@@ -6,11 +6,24 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 113.142.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.236.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.151.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.125.67.0/24
+
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 173.82.77.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 176.126.252.0/24
+
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 180.88.216.0/24
+
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 182.92.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 211.155.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 220.181.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 222.186.58.0/24
+
+
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.135.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.147.98.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.174.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 61.231.3.0/24
+
 
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.120.0.0/16 	# Aliyun
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.121.0.0/16 	# Aliyun
@@ -20,38 +33,57 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 140.205.0.0/16 	# Aliyun
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.57.0.0/16 	# Aliyun
 
-# 美国
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 142.54.0.0/16
-
-
-# 英国
-213.111.197.198
-
-# 法国
-37.187.252.112
-193.248.178.237
-
-# 瑞典
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.153.233.130
+########################################
+#
+# Other
+#
+########################################
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.35.23.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.137.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.141.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.153.233.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.166.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.178.86.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.99.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.113.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.187.252.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 42.200.44.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 43.240.14.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 54.93.64.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 67.212.234.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 72.69.147.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 75.119.221.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 79.114.249.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 80.248.225.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 86.123.245.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 91.210.145.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.138.181.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.213.187.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 100.42.229.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 104.251.224.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 108.179.34.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.249.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.252.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 130.185.155.0/24
-
-130.185.155.74
-
-
-# 意大利 
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.138.181.68
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 164.132.161.60
-
-
-#捷克
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 176.111.79.202
-
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 142.54.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 153.136.12.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 164.132.161.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 169.229.3.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 176.111.79.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.95.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.159.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 182.92.7.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 185.33.60.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 193.248.178.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 195.154.235.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.52.119.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.74.98.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.199.110.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 203.185.28.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 213.111.197.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 216.87.168.0/24
 
 # 俄罗斯
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.141.0.0/16
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.166.0.0/16
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 5.137.0.0/16
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.113.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 109.207.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 128.74.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.46.0.0/16
@@ -63,6 +95,7 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 195.208.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 212.107.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 217.66.0.0/16
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 69.58.178.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 77.66.135.39
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 85.26.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 83.149.0.0/16
@@ -72,35 +105,6 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.31.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.183.0.0/16
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 193.169.0.0/16
-
-
-# 哈萨克斯坦
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 37.99.0.0/16
-
-
-# 乌克兰
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.159.0.0/16
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 178.95.0.0/16
-
-
-
-# 印度
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 115.249.0.0/16
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 123.252.0.0/16
-
-
-# robot 
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 100.42.229.240
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 104.251.224.128
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 216.87.168.52
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.199.110.251
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 69.58.178.58
-
-
-# http 400
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.52.119.97
--A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.74.98.247
-
 
 # 扫描漏洞脚本
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 101.226.103.146
@@ -163,9 +167,3 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.25.74.99
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 94.41.7.154
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 95.181.199.129
-
-
-
-
-
-iptables -D INPUT -p TCP --dport 80 -j DROP -s 182.92.7.12
