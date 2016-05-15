@@ -108,6 +108,7 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.74.98.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.143.180.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 198.199.110.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 200.98.117.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 203.185.28.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 208.67.1.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 212.48.86.0/24
@@ -116,6 +117,7 @@
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 216.87.168.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 219.101.65.0/24
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 219.133.49.0/24
+-A INPUT -j REJECT --reject-with icmp-port-unreachable -s 220.167.100.0/24
 
 # ถํยÞหน
 -A INPUT -j REJECT --reject-with icmp-port-unreachable -s 109.207.0.0/16
