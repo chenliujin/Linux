@@ -39,6 +39,17 @@ $ yum install rdate
 # crontab
 */30 * * * * rdate -s time.nist.gov > /dev/null
 ```
+## selinux
+```
+$ setenforce 0  
+
+$ vim /etc/selinux/config
+SELINUX=disabled  
+
+```
+
+
+
 * tree
 * Git
 
