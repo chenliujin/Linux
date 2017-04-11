@@ -1,22 +1,24 @@
-set number "Show line number
-set encoding=utf8 "ÉèÖÃ±àÂë
-set nowrap "no Wrap lines
+syntax on
+filetype indent on
+
+set number
+set encoding=utf8
+set fileformat=unix
+
+
+set nowrap
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ëõ½ø
+" æŠ˜å 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set ts=4    "tabstop,±à¼­Ê±Ò»¸öTAB×Ö·ûÕ¼¶àÉÙ¸ö¿Õ¸ñµÄÎ»ÖÃ
-set sw=4    "shiftwidth,Ê¹ÓÃÃ¿²ãËõ½øµÄ¿Õ¸ñÊı
+set fdm=marker
 
-
-filetype indent on  "Enable filetype indent
-"set smartindent "»ùÓÚautoindentµÄÒ»Ğ©¸Ä½ø
+"set smartindent "åŸºäºautoindentçš„ä¸€äº›æ”¹è¿›
 "set cindent
 
-
-syntax on "¸ßÁÁ
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ËÑË÷
+" æœç´¢
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set hlsearch "ËÑË÷½á¹û¸ßÁÁÏÔÊ¾
+set hlsearch "é«˜äº®æœç´¢ç»“æœ
