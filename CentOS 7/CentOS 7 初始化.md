@@ -48,6 +48,10 @@ SELINUX=disabled
 
 ```
 
+## yum
+```
+$ yum install -y epel-release
+```
 
 
 * tree
