@@ -1,0 +1,40 @@
+# CPU（i5）
+## i5-7400：￥1359
+- 3 GHZ
+- 6MB高速缓存
+- CPU 插槽：LGA1151
+- 核芯显卡 630
+- https://item.jd.com/3701899.html?dist=jd
+
+# 内存（DDR4 2400 16G）
+- 威刚 DDR4 2400 单条 16G：￥899
+- https://item.jd.com/3432664.html
+
+# 主板（华硕）
+## 华硕 H110I-PLUS：￥679
+- CPU 插槽 LGA1151
+- 内存插槽 2 DDR4 2133
+	- 双通道：不支持
+- 显卡插槽
+- 电源
+	6相数字供电
+
+# 显卡
+## 七彩虹
+- 七彩虹GT730K 灵动鲨-2GD5 1046MHz/5000MHz 2G/64bit DDR5 PCI-E显卡：￥439
+- https://item.jd.com/1282017.html
+
+# 硬盘（希捷 1T）
+- 1TB 7200转64M SATA3：￥299 
+- https://item.jd.com/3843702.html#crumb-wrap
+
+# 机箱
+## 金河田
+
+# 电源
+- 功率估算
+## 酷冷至尊 
+### ￥209
+- 主动式 PFC
+- 400W（额定）
+- https://item.jd.com/710679.html
