@@ -5,7 +5,7 @@
 - CPU 插槽：LGA1151
 - 核芯显卡 630
 - 功率：65 W
-- 内存：DDR4-2133/2140
+- 内存：DDR4-2133/2400
 - https://item.jd.com/3701899.html?dist=jd
 
 # 内存（DDR4 2400 16G）
@@ -20,6 +20,12 @@
 - 显卡插槽
 - 电源
 	6相数字供电
+- https://item.jd.com/3470834.html?dist=jd
+
+## 华硕（ASUS）PRIME B250M-PLUS 主板（Intel B250/LGA 1151）
+- ￥699
+- 内存：4 x DDR4, 2400 MHz * /2133MHz
+- 双通道：支持
 
 # 显卡
 ## 七彩虹
@@ -42,3 +48,14 @@
 - 主动式 PFC
 - 400W（额定）
 - https://item.jd.com/710679.html
+
+
+# 参考文献
+- [Intel主板芯片组排行榜](http://top.zol.com.cn/compositor/469/manu_125.html)
+
+# 中端
+- H110：支持内存（DDR4 2133 MHz）
+- B250：支持内存（DDR4 2400 MHz / 2133 MHz）
+
+# 高端
+- Z270
