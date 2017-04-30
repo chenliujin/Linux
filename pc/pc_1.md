@@ -18,14 +18,16 @@
 - 内存插槽 2 DDR4 2133
 	- 双通道：不支持
 - 显卡插槽
-- 电源
-	6相数字供电
+- 显卡：PCI Express 3.0
+- 电源：6相数字供电
 - https://item.jd.com/3470834.html?dist=jd
 
 ## 华硕（ASUS）PRIME B250M-PLUS 主板（Intel B250/LGA 1151）
 - ￥699
 - 内存：4 x DDR4, 2400 MHz * /2133MHz
 - 双通道：支持
+- 显卡：PCI Express 3.0
+- https://item.jd.com/4252424.html?dist=jd
 
 # 显卡
 ## 七彩虹
@@ -59,3 +61,7 @@
 
 # 高端
 - Z270
+
+- [双通道比单通道快多少？内存频率对核心显卡的影响有多大？](http://www.365pcbuy.com/article-428.html)
+- [intel和AMD CPU性能对比](http://m.365pcbuy.com/article-411.html)
+- [功率计算器](http://www.huntkey.com.cn/service/calculator.html)
