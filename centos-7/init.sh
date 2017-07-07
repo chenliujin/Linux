@@ -21,3 +21,5 @@ sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 
 # iptables
 
+
+# ssh-keygen -t rsa -C liujin.chen@qq.com
