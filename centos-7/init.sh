@@ -23,3 +23,6 @@ sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 
 
 # ssh-keygen -t rsa -C liujin.chen@qq.com
+
+# hostname
+hostnamectl set-hostname vm01x
