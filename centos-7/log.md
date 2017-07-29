@@ -1,0 +1,4 @@
+
+```
+$ systemctl restart rsyslog
+```
