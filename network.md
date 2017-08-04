@@ -1,4 +1,15 @@
 
+
+```
+nmtui edit enp2s0
+
+systemctl restart network.service
+```
+
+
+
+
+
 # vim /etc/sysconfig/network-scripts/ifcfg-enp2s0
 ```
 BOOTPROTO=static
