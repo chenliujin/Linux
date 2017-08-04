@@ -6,13 +6,12 @@ hostname=
 #sed -i "s/ONBOOT=no/ONBOOT=yes/" /etc/sysconfig/network-scripts/ifcfg-eth0
 #ifup eth0
 
-yum install -y rsync
 
-yum update -y
+yum install -y epel-release
+yum update  -y
 yum install -y tree
 yum install -y net-tools
 yum install -y vim screen
-yum install -y epel-release
 #yum install -y git
 
 systemctl stop    firewalld
