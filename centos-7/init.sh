@@ -15,6 +15,9 @@ yum install -y vim screen
 yum install -y epel-release
 #yum install -y git
 
+systemctl stop    firewalld
+systemctl disable firewalld
+
 # 时间同步
 yum install -y ntp
 systemctl enable ntpd
