@@ -1,6 +1,6 @@
 #!/bin/bash
 
-hostname=c1
+hostname=
 
 # network
 #sed -i "s/ONBOOT=no/ONBOOT=yes/" /etc/sysconfig/network-scripts/ifcfg-eth0
