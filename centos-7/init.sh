@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# network
-sed -i "s/ONBOOT=no/ONBOOT=yes/" /etc/sysconfig/network-scripts/ifcfg-eth0
-ifup eth0
+hostname=c1
 
-yum install -y rsync tree
+# network
+#sed -i "s/ONBOOT=no/ONBOOT=yes/" /etc/sysconfig/network-scripts/ifcfg-eth0
+#ifup eth0
+
+yum install -y rsync
+
+yum update -y
+yum install -y tree
 yum install -y net-tools
 yum install -y vim screen
 yum install -y epel-release
@@ -25,4 +30,4 @@ sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 # ssh-keygen -t rsa -C liujin.chen@qq.com
 
 # hostname
-hostnamectl set-hostname vm01x
+hostnamectl set-hostname $hostname 
