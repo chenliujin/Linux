@@ -33,3 +33,11 @@ ssh-keygen -t rsa -C liujin.chen@qq.com
 
 # hostname
 hostnamectl set-hostname $hostname 
+
+
+echo 'net.ipv4.tcp_syncookies = 1' 	>> /etc/sysctl.conf
+echo 'net.ipv4.tcp_tw_reuse = 1'	>> /etc/sysctl.conf 
+echo 'net.ipv4.tcp_tw_recycle = 1'	>> /etc/sysctl.conf 
+echo 'net.ipv4.tcp_fin_timeout = 30 '	>> /etc/sysctl.conf 
+
+sysctl -p
