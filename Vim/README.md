@@ -7,6 +7,12 @@ $ vim
 :PlugInstall
 ```
 
+## Markdown
+```
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+```
+
 
 # yml & yaml
 - https://github.com/pearofducks/ansible-vim
