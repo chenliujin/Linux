@@ -2,6 +2,11 @@
 # Vim 插件管理器
 - https://github.com/VundleVim/Vundle.vim
 
+```
+$ vim
+:PlugInstall
+```
+
 
 # yml & yaml
 - https://github.com/pearofducks/ansible-vim
