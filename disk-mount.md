@@ -19,4 +19,5 @@ $ cat /etc/fstab
 ```
 
 # 参考文献
-- https://help.aliyun.com/document_detail/25426.html?spm=5176.7738005.2.1.3LXGcb
+- [Linux 格式化和挂载数据盘](https://help.aliyun.com/document_detail/25426.html?spm=5176.7738005.2.1.3LXGcb)
+- [扩容数据盘_Linux](https://help.aliyun.com/document_detail/25452.html?spm=5176.10695662.1996646101.searchclickresult.12b5e5c6tD0Rd8)    
