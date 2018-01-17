@@ -1,6 +1,16 @@
 
 # 目标服务器（k4）
 
+### rsyncd 配置
+```
+```
+
+### 开机启动
+```
+$ systemctl enable rsyncd
+$ systemctl start  rsyncd
+```
+
 ---
 
 # 源服务器（k2）
@@ -15,10 +25,10 @@ $ yum install -y inotify-tools
 ```
 
 ### systemd service
+```
+```
 
 ---
-
-
 
 
 # 参考文献
