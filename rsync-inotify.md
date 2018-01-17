@@ -1,4 +1,23 @@
 
+# 目标服务器（k4）
+
+---
+
+# 源服务器（k2）
+
+### 安装 inotify
+```
+$ yum install -y inotify-tools
+```
+
+### inotity 同步脚本
+```
+```
+
+### systemd service
+
+---
+
 
 
 
