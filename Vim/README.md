@@ -4,7 +4,7 @@
 
 ```
 $ vim
-:PlugInstall
+:PluginInstall
 ```
 
 ## Markdown
