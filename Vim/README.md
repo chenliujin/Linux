@@ -13,6 +13,11 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 ```
 
+## [Vue](https://github.com/posva/vim-vue)
+```
+Plugin 'posva/vim-vue'
+```
+
 
 # yml & yaml
 - https://github.com/pearofducks/ansible-vim
