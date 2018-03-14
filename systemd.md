@@ -1,6 +1,8 @@
 
 
 # 查看日志
+- -f 实时刷新
+- -u 查看指定 service( nginx.service) 的日志
 ```
 $ journalctl -f -u nginx
 ```
