@@ -6,6 +6,7 @@ $ fdisk -l
 # 分区
 $ fdisk /dev/vdb
 - 输入 `n` 并按回车键：创建一个新分区。
+- w 保存修改
 
 # 格式化
 $ mkfs.ext4 /dev/vdb1
