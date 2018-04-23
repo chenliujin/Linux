@@ -1,3 +1,14 @@
+# 当硬盘大于2T时，用parted命令。
+```
+parted /dev/sdb   (用part命令对3T硬盘进行分区处理）  
+mklabel gpt       (用gpt格式可以将3TB弄在一个分区里)  
+unit TB           (设置单位为TB)  
+mkpart primary 0 3 (设置为一个主分区,大小为3TB，开始是0，结束是3）  
+print              (显示设置的分区大小）  
+quit               (退出parted程序)  
+```
+
+---
 
 ```
 $ df -h 
