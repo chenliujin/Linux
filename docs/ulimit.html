@@ -23,8 +23,10 @@ $ vim /etc/profile
 ulimit -SHn 65535
 
 $ vim /etc/security/limits.conf
-*               soft    nofile          65535
-*               hard    nofile          65535
+*         soft    nofile      65535
+*         hard    nofile      65535
+root      hard    nofile      500000
+root      soft    nofile      500000
 </pre>
 
 <h2>╡н©╪ндов</h2>

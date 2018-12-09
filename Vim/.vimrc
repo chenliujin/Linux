@@ -1,24 +1,23 @@
-syntax on
-filetype indent on
+set nocompatible
+filetype off
 
-set number
-set encoding=utf8
-set fileformat=unix
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'posva/vim-vue'
+Plugin 'chr4/nginx.vim'
+
+call vundle#end()
+filetype plugin indent on   
+
+set nu
+set smarttab "根据文件中其他地方的缩进空格个数来确定一个 tab 是多少个空格
+set tabstop=2 "一个 tab 显示出来是多少个空格，默认 8
+set shiftwidth=2 "每一级缩进是多少个空格
+set expandtab "将 tag 扩展成空格
 
 
-set nowrap
-
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 折叠
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set fdm=marker
-
-"set smartindent "基于autoindent的一些改进
-"set cindent
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 搜索
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set hlsearch "高亮搜索结果
