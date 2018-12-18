@@ -1,0 +1,2 @@
+-A INPUT -s 91.207.4.141/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 176.51.1.31/24 -j REJECT --reject-with icmp-port-unreachable

@@ -1,0 +1,68 @@
+#! /bin/sh
+
+iptables -F
+iptables -t nat -F
+iptables -t mangle -F
+iptables -X
+
+cat /root/iprules/rules_header > /root/init.rules
+
+cat /root/iprules/black.rules >> /root/init.rules
+
+# Normal blocks
+#cat /root/iprules/country.rules/ae.rules >> /root/init.rules
+#cat /root/iprules/country.rules/af.rules >> /root/init.rules
+#cat /root/iprules/country.rules/al.rules >> /root/init.rules
+#cat /root/iprules/country.rules/bd.rules >> /root/init.rules
+#cat /root/iprules/country.rules/bs.rules >> /root/init.rules
+#cat /root/iprules/country.rules/gt.rules >> /root/init.rules
+#cat /root/iprules/country.rules/hn.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ht.rules >> /root/init.rules
+#cat /root/iprules/country.rules/iq.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ir.rules >> /root/init.rules
+#cat /root/iprules/country.rules/jo.rules >> /root/init.rules
+#cat /root/iprules/country.rules/jm.rules >> /root/init.rules
+#cat /root/iprules/country.rules/kw.rules >> /root/init.rules
+#cat /root/iprules/country.rules/la.rules >> /root/init.rules
+#cat /root/iprules/country.rules/mn.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ng.rules >> /root/init.rules
+#cat /root/iprules/country.rules/np.rules >> /root/init.rules
+#cat /root/iprules/country.rules/pa.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ph.rules >> /root/init.rules
+#cat /root/iprules/country.rules/pk.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ps.rules >> /root/init.rules
+#cat /root/iprules/country.rules/qa.rules >> /root/init.rules
+#cat /root/iprules/country.rules/sy.rules >> /root/init.rules
+#cat /root/iprules/country.rules/th.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ve.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ye.rules >> /root/init.rules
+#cat /root/iprules/country.rules/hk.rules >> /root/init.rules
+#cat /root/iprules/country.rules/cn.rules >> /root/init.rules
+#cat /root/iprules/country.rules/tw.rules >> /root/init.rules
+#cat /root/iprules/country.rules/mo.rules >> /root/init.rules
+#cat /root/iprules/country.rules/vn.rules >> /root/init.rules
+
+# Consider blocks
+#cat /root/iprules/country.rules/bo.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ge.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ni.rules >> /root/init.rules
+#cat /root/iprules/country.rules/md.rules >> /root/init.rules
+#cat /root/iprules/country.rules/ba.rules >> /root/init.rules
+#cat /root/iprules/country.rules/id.rules >> /root/init.rules
+#cat /root/iprules/country.rules/kg.rules >> /root/init.rules
+#cat /root/iprules/country.rules/kr.rules >> /root/init.rules
+#cat /root/iprules/country.rules/lk.rules >> /root/init.rules
+#cat /root/iprules/country.rules/om.rules >> /root/init.rules
+#cat /root/iprules/country.rules/rs.rules >> /root/init.rules
+#cat /root/iprules/country.rules/tt.rules >> /root/init.rules
+
+# Transportation block
+cat /root/iprules/country.rules/ar.rules >> /root/init.rules
+#cat /root/iprules/country.rules/pe.rules >> /root/init.rules
+cat /root/iprules/country.rules/ye.rules >> /root/init.rules
+
+cat /root/iprules/rules_footer >> /root/init.rules
+
+iptables-restore -c < /root/init.rules
+
+#rm /dev/shm/countries_blocked

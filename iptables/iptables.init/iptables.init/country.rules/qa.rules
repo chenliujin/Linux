@@ -1,0 +1,12 @@
+-A INPUT -s 78.100.0.0/15 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 80.76.160.0/20 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 81.29.160.0/20 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 82.148.96.0/19 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 86.36.0.0/15 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 86.62.192.0/18 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 89.211.0.0/16 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 94.125.224.0/21 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 178.23.16.0/21 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 178.152.0.0/15 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 212.77.192.0/19 -j REJECT --reject-with icmp-port-unreachable 
+-A INPUT -s 213.130.96.0/19 -j REJECT --reject-with icmp-port-unreachable 
