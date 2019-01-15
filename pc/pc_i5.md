@@ -1,13 +1,3 @@
-# CPU（i5）
-## i5-7400：￥1359
-- 3 GHZ
-- 6MB高速缓存
-- CPU 插槽：LGA1151
-- 核芯显卡 630
-- 功率：65 W
-- 内存：DDR4-2133/2400
-- https://item.jd.com/3701899.html?dist=jd
-
 # 内存（DDR4 2400 16G）
 - 威刚 DDR4 2400 单条 16G：￥899
 - https://item.jd.com/3432664.html
@@ -35,7 +25,7 @@
 - https://item.jd.com/1282017.html
 
 # 硬盘（希捷 1T）
-- 1TB 7200转64M SATA3：￥299 
+- 1TB 7200转64M SATA3：￥299
 - https://item.jd.com/3843702.html#crumb-wrap
 
 # 机箱
@@ -45,7 +35,7 @@
 
 # 电源
 - 功率估算
-## 酷冷至尊 
+## 酷冷至尊
 ### ￥209
 - 主动式 PFC
 - 400W（额定）
