@@ -1,5 +1,5 @@
-<pre>
-$ ulimit -a
+```
+# ulimit -a
 core file size          (blocks, -c) 0
 data seg size           (kbytes, -d) unlimited
 scheduling priority             (-e) 0
@@ -15,24 +15,29 @@ stack size              (kbytes, -s) 8192
 cpu time               (seconds, -t) unlimited
 max user processes              (-u) 14573
 virtual memory          (kbytes, -v) unlimited
-file locks                      (-x) unlimited	
+file locks                      (-x) unlimited
+```
 
 $ ulimit -n 65535
 
 $ vim /etc/profile
 ulimit -SHn 65535
 
-$ vim /etc/security/limits.conf
-*         soft    nofile      65535
-*         hard    nofile      65535
-root      hard    nofile      500000
-root      soft    nofile      500000
-</pre>
+```
+# vim /etc/security/limits.conf
+* soft nofile 204800  
+* hard nofile 204800  
+* soft nproc 204800  
+* hard nproc 204800
+```
 
-<h2>²Î¿¼ÎÄÏ×</h2>
+# å‚è€ƒæ–‡çŒ®
+* https://blog.csdn.net/xuchuangqi/article/details/78989884
+
+<h2>ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½</h2>
 <ul>
 	<li>http://www.linuxfly.org/post/73/</li>
 	<li>http://man.linuxde.net/ulimit</li>
-	<li><a href="http://happyqing.iteye.com/blog/1953563">linuxĞŞ¸Ä×î´óÎÄ¼şÁ´½ÓÊıopen files</a></li>
-	<li><a href="https://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/">Í¨¹ı ulimit ¸ÄÉÆÏµÍ³ĞÔÄÜ</a></li>
+	<li><a href="http://happyqing.iteye.com/blog/1953563">linuxï¿½Ş¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½open files</a></li>
+	<li><a href="https://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/">Í¨ï¿½ï¿½ ulimit ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½</a></li>
 </ul>
